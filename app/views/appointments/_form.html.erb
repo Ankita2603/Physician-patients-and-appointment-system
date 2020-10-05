@@ -1,0 +1,13 @@
+<%= form_for [@patient, @appointment] do |f| %>
+	<p>
+		<%= f.label :appointment_date %><br>
+		<%= f.date_field :appointment_date %>
+	</p> 
+	<p>
+		<%= f.label :physician_id %><br>
+		<%= f.select :physician_id, physician.map{|phy|  [ phy.name, phy.id]} %>
+    </p> 
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>

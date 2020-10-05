@@ -1,0 +1,23 @@
+<h2>Show Patient</h2>
+<p>
+    <strong>Name:</strong>
+    <%= @patient.name %>
+</p>
+<p>
+    <strong>Email:</strong>
+    <%= @patient.email %>
+</p>
+<p>
+    <strong>Phone Number:</strong>
+    <%= @patient.phone_number %>
+</p>
+<p>
+    <strong>Age:</strong>
+    <%= @patient.age %>
+</p>
+<p>
+    <strong>Address:</strong>
+    <%= @patient.address %>
+</p>
+<%= link_to 'Edit', edit_patient_path %>
+<%= link_to 'Back', patients_path %>

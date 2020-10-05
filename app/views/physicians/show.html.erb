@@ -1,0 +1,15 @@
+<h2>Show Physician</h2>
+<p>
+    <strong>Name:</strong>
+    <%= @physician.name %>
+</p>
+<p>
+    <strong>Email:</strong>
+    <%= @physician.email %>
+</p>
+<p>
+    <strong>Department:</strong>
+    <%= @physician.department %>
+</p>
+<%= link_to 'Edit', edit_physician_path %>
+<%= link_to 'Back', physicians_path %>

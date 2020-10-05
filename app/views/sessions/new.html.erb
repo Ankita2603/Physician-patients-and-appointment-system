@@ -1,0 +1,16 @@
+<p id=”alert”><%= alert %></p>
+<h1>Login</h1>
+<%= form_tag sessions_path do |f| %>
+  <div class=”field”>
+    <%= label_tag :email %>
+    <%= text_field_tag :email %>
+  </div><br>
+  <div class=”field”>
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
+  </div><br>
+  <div class=”actions”>
+    <%= submit_tag :Login %><br><br>
+    <b><%= link_to 'Patient Register Here', new_patient_path %> OR <%= link_to 'Physician Register Here', new_physician_path %></b>
+  </div>
+<% end %>
